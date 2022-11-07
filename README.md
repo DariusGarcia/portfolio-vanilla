@@ -5,10 +5,10 @@
 This website was created for myself to display the projects I have completed and the technical skills I possess for potential employers to review samples of my work.
 
 Installation
-https://dariusgarcia.io/module1-portfolio
+https://dariusgarcia.github.io/module1-portfolio
 
 Usage
-To use this Landing website, you can review the different content sections on Google Search Optimization, Online Reputation Management, and Social Media Marketing.
+View different personal projects I have completed and the technical skills I possess.
 
 Credits
 N/A

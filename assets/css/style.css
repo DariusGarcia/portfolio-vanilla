@@ -33,7 +33,7 @@ body {
     align-items: center;
     padding: 0 2rem;
     border-bottom: 2px solid grey;
-    ;
+    z-index: 5;
 
 }
 
