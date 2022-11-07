@@ -17,19 +17,24 @@ body {
 }
 
 .navbar {
+    background-color: black;
     display: flex;
     flex-direction: row;
+    position: fixed;
+    width: 100%;
     justify-content: space-between;
     height: 4rem;
     align-items: center;
     padding: 0 2rem;
+    border-bottom: 2px solid grey;
+    ;
 
 }
 
 .nav-links-container {
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .nav-link {
@@ -59,6 +64,7 @@ li {
     gap: 2rem;
     justify-content: center;
     align-items: center;
+    padding-top: 4rem;
 }
 
 .header h1 {
@@ -125,11 +131,15 @@ main h4 {
 }
 
 .web-apps {
-    gap: 2rem;
+    /* gap: 2rem; */
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 .mobile-apps {
     margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 .project-card {
@@ -161,6 +171,12 @@ main h4 {
     border-bottom: 1px solid #00bbff;
 }
 
+img {
+    width: 100%;
+    /* width: max-content; */
+    border-radius: 5px;
+}
+
 /* media queries */
 
 @media (min-width: 768px) {
@@ -173,6 +189,10 @@ main h4 {
 
     .nav-left-section {
         display: flex;
+    }
+
+    .header {
+        padding-top: 6rem;
     }
 
     .header-text {
@@ -196,6 +216,11 @@ main h4 {
 
     .projects-tabs {
         width: 25%;
+    }
+
+    img {
+        height: 16rem;
+        width: auto;
     }
 }
 
