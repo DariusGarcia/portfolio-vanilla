@@ -8,7 +8,6 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
 }
 
 body {
@@ -36,6 +35,8 @@ body {
 .nav-link {
     border: 1px solid transparent;
     padding: 0.5rem;
+    text-decoration: none;
+    color: white;
 }
 
 .nav-link:hover {
@@ -112,8 +113,14 @@ main h3 {
     font-size: 2rem;
 }
 
+main h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: gainsboro;
+}
+
 .projects-container {
-    margin-top: 4rem;
+    margin-top: 2rem;
 
 }
 
@@ -128,28 +135,60 @@ main h3 {
 .project-card {
     display: flex;
     flex-direction: column;
-    border: 2px solid white;
+    margin-bottom: 1.5rem;
     padding: 1rem;
+    border: 2px solid white;
     border-radius: 5px;
     gap: 1rem;
 }
 
-.project-card-link {
-    text-decoration: none;
-    color: #00bbff
+.project-card:hover {
+    border: 2px solid #00bbff;
 }
 
+.project-card-details {
+    color: gainsboro;
+}
 
+.project-card-link {
+    text-decoration: none;
+    color: #00bbff;
+    width: max-content;
+    border-bottom: 1px solid transparent;
+}
 
+.project-card-link:hover {
+    border-bottom: 1px solid #00bbff;
+}
 
-@media (min-width: 768px) {}
+/* media queries */
+
+@media (min-width: 768px) {
+    .header-text {
+        width: 75%;
+    }
+}
 
 @media (min-width: 968px) {
+
+    .nav-left-section {
+        display: flex;
+    }
+
     .header-text {
         width: 50%;
     }
 
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
+    .projects-container {
+        width: 60%;
+    }
 
     .project-tabs {
         display: fixed;
@@ -160,4 +199,8 @@ main h3 {
     }
 }
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+    .header-text {
+        width: 40%;
+    }
+}
