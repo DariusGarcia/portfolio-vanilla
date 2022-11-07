@@ -133,6 +133,7 @@ main h4 {
 
 .projects-container {
     margin-top: 2rem;
+    text-align: center;
 
 }
 
@@ -140,7 +141,13 @@ main h4 {
     /* gap: 2rem; */
     display: grid;
     grid-template-columns: 1fr;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
 }
+
+
 
 .mobile-apps {
     margin-top: 4rem;
@@ -321,6 +328,7 @@ footer h5 {
 
     .projects-container {
         width: 60%;
+
     }
 
     .project-tabs {
@@ -331,13 +339,21 @@ footer h5 {
         width: 25%;
     }
 
+    .web-apps {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project-card:first-child {
+        grid-column: 1 / 3;
+    }
+
     img {
         height: 16rem;
         width: auto;
     }
 
     #bullbear {
-        height: 30rem;
+        height: 20rem;
     }
 
     .skills-container {
