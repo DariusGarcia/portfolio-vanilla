@@ -22,48 +22,156 @@ body {
 
 }
 
-.navbar {
-    background-color: black;
-    display: flex;
-    flex-direction: row;
-    position: fixed;
+/* mobile hamburger menu */
+.container {
+    max-width: 1050px;
+    width: 90%;
+    margin: auto;
+}
+
+.navbar-mobile {
     width: 100%;
-    justify-content: space-between;
-    height: 4rem;
-    align-items: center;
-    padding: 0 2rem;
-    border-bottom: 2px solid grey;
-    z-index: 5;
-
+    box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
 }
 
-.nav-links-container {
+.nav-container {
     display: flex;
-    flex-direction: row;
-    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
 }
 
-.nav-link {
-    border: 1px solid transparent;
-    padding: 0.5rem;
-    text-decoration: none;
-    color: white;
+.navbar-mobile .menu-items {
+    display: flex;
 }
 
-.nav-link:hover {
-    background-color: #00bbff;
-    border-radius: 5px;
-}
-
-li {
+.navbar-mobile .nav-container li {
     list-style: none;
 }
 
-.nav-left-section {
+.navbar-mobile .nav-container a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 0.7rem;
+}
+
+.navbar-mobile .nav-container a:hover {
+    font-weight: bolder;
+}
+
+.nav-container {
+    display: block;
+    position: relative;
+    height: 60px;
+}
+
+.nav-container .checkbox {
+    position: absolute;
+    display: block;
+    height: 32px;
+    width: 32px;
+    top: 20px;
+    left: 20px;
+    z-index: 5;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.nav-container .hamburger-lines {
+    display: block;
+    height: 26px;
+    width: 32px;
+    position: absolute;
+    top: 17px;
+    left: 20px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nav-container .hamburger-lines .line {
+    display: block;
+    height: 4px;
+    width: 100%;
+    border-radius: 10px;
+    background: #ffffff;
+}
+
+.nav-container .hamburger-lines .line1 {
+    transform-origin: 0% 0%;
+    transition: transform 0.4s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line2 {
+    transition: transform 0.2s ease-in-out;
+}
+
+.nav-container .hamburger-lines .line3 {
+    transform-origin: 0% 100%;
+    transition: transform 0.4s ease-in-out;
+}
+
+.navbar-mobile .menu-items {
+    padding-top: 120px;
+    /* box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.5); */
+    background-color: #00bbff;
+    height: 100vh;
+    width: 100%;
+    transform: translate(-150%);
+    display: flex;
+    flex-direction: column;
+    margin-left: -40px;
+    padding-left: 50px;
+    transition: transform 0.5s ease-in-out;
+    text-align: center;
+}
+
+.navbar-mobile .menu-items li {
+    margin-bottom: 1.2rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.logo {
+    display: flex;
+    position: absolute;
+    right: 15px;
+    font-size: 1.2rem;
+    color: #e7e7e7;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.nav-container input[type="checkbox"]:checked~.menu-items {
+    transform: translateX(0);
+}
+
+.nav-container input[type="checkbox"]:checked~.hamburger-lines .line1 {
+    transform: rotate(45deg);
+}
+
+.nav-container input[type="checkbox"]:checked~.hamburger-lines .line2 {
+    transform: scaleY(0);
+}
+
+.nav-container input[type="checkbox"]:checked~.hamburger-lines .line3 {
+    transform: rotate(-45deg);
+}
+
+.nav-container input[type="checkbox"]:checked~.logo {
     display: none;
 }
 
+/* regular nav */
+.navbar {
+    display: none;
+}
 
+/* end of OG nav */
 .header {
     display: flex;
     flex-direction: column;
@@ -306,6 +414,51 @@ footer h5 {
 }
 
 @media (min-width: 968px) {
+
+    .navbar-mobile {
+        display: none;
+    }
+
+    .navbar {
+        background-color: black;
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        width: 100%;
+        justify-content: space-between;
+        height: 4rem;
+        align-items: center;
+        padding: 0 2rem;
+        border-bottom: 2px solid grey;
+        z-index: 5;
+
+    }
+
+    .nav-links-container {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+
+    .nav-link {
+        border: 1px solid transparent;
+        padding: 0.5rem;
+        text-decoration: none;
+        color: white;
+    }
+
+    .nav-link:hover {
+        background-color: #00bbff;
+        border-radius: 5px;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    .nav-left-section {
+        display: none;
+    }
 
     .nav-left-section {
         display: flex;
