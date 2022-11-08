@@ -20,7 +20,6 @@ body {
 /* mobile hamburger menu */
 .container {
     max-width: 1050px;
-    width: 90%;
     margin: auto;
 }
 
@@ -235,8 +234,6 @@ canvas {
     border-radius: 5px;
 }
 
-
-
 main aside {
     display: grid;
     grid-template-columns: 1fr;
@@ -273,7 +270,6 @@ main h4 {
 .projects-container h4 {
     margin-bottom: 2rem;
 }
-
 
 .web-apps {
     display: grid;
@@ -413,6 +409,7 @@ article img:hover {
     padding: 1rem;
     width: 10rem;
     background-color: #00bbff;
+    color: white;
     border: none;
     border-radius: 5px;
     margin-top: 1rem;
