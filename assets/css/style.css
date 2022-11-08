@@ -205,6 +205,20 @@ header .projects-cta:hover {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.model {
+    position: relative;
+    top: 0;
+    height: 100vh;
+    margin-top: 2rem;
+}
+
+canvas {
+    display: block;
+    height: 15rem;
+    cursor: grab;
+    border-radius: 5px;
+}
+
 main {
     margin-top: 4rem;
 
@@ -353,19 +367,6 @@ article img:hover {
 
 }
 
-.model {
-    position: relative;
-    top: 0;
-    height: 100vh;
-    margin-top: 2rem;
-}
-
-canvas {
-    display: block;
-    height: 15rem;
-    cursor: grab;
-    border-radius: 5px;
-}
 
 .contact-form {
     padding: 2rem;
@@ -436,7 +437,14 @@ footer {
 
 footer h5 {
     width: max-content;
+}
 
+#footer-name {
+    margin-bottom: 2rem;
+}
+
+footer .contact-list:hover {
+    opacity: 75%;
 }
 
 /* -------------------- ----------------------------------------
