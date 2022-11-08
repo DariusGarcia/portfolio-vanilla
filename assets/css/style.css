@@ -353,6 +353,19 @@ article img:hover {
 
 }
 
+.model {
+    position: relative;
+    top: 0;
+    height: 100vh;
+    margin-top: 2rem;
+}
+
+canvas {
+    display: block;
+    height: 15rem;
+    cursor: grab;
+}
+
 .contact-form {
     padding: 2rem;
     border-radius: 5px;
