@@ -15,7 +15,6 @@ body {
     padding: 0 1rem;
     background-color: black;
     color: white;
-
 }
 
 /* mobile hamburger menu */
@@ -27,7 +26,6 @@ body {
 
 .navbar-mobile {
     width: 100%;
-    /* box-shadow: 0 1px 4px rgb(146 161 176 / 15%); */
 }
 
 .nav-container {
@@ -218,6 +216,11 @@ header .projects-cta:hover {
     opacity: 75%;
 }
 
+#avatar {
+    height: auto;
+    width: 16rem;
+}
+
 .model {
     position: relative;
     top: 0;
@@ -263,8 +266,16 @@ main h4 {
     text-align: center;
 }
 
+#projects {
+    font-size: 3rem;
+}
+
+.projects-container h4 {
+    margin-bottom: 2rem;
+}
+
+
 .web-apps {
-    /* gap: 2rem; */
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
@@ -284,7 +295,7 @@ main h4 {
     flex-direction: column;
     margin-bottom: 1.5rem;
     padding: 1rem;
-    border: 2px solid white;
+    border: 2px solid grey;
     border-radius: 5px;
     gap: 1rem;
 }
@@ -294,7 +305,7 @@ main h4 {
 }
 
 .project-card-details {
-    color: gainsboro;
+    color: grey;
 }
 
 .project-card-link {
@@ -363,8 +374,6 @@ article img:hover {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    /* margin-top: 2rem; */
-    /* margin-bottom: 4rem; */
 }
 
 .contact-list-wrapper a {
@@ -378,9 +387,7 @@ article img:hover {
     justify-content: center;
     align-items: center;
     margin-bottom: 4rem;
-
 }
-
 
 .contact-form {
     padding: 2rem;
@@ -392,11 +399,9 @@ article img:hover {
 .contact-form h4 {
     font-size: 2rem;
     margin-bottom: 1rem;
-
 }
 
 .contact-form h4 p {
-
     margin-bottom: 1rem;
 }
 
@@ -526,8 +531,6 @@ footer h5 {
         justify-content: center;
         align-items: center;
         margin-top: 8rem;
-
-
     }
 
     .projects-container {
@@ -579,11 +582,5 @@ footer h5 {
 
     .contact-form-wrapper {
         width: 50%;
-    }
-}
-
-@media (min-width: 1177px) {
-    .header-text {
-        width: 40%;
     }
 }
