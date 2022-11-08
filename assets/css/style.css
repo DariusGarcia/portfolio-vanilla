@@ -173,7 +173,7 @@ body {
     gap: 2rem;
     justify-content: center;
     align-items: center;
-    padding-top: 4rem;
+    padding-top: 1rem;
 }
 
 .header h1 {
@@ -203,13 +203,14 @@ header .projects-cta {
 header .projects-cta:hover {
     scale: 95%;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 75%;
 }
 
 .model {
     position: relative;
     top: 0;
     height: 100vh;
-    margin-top: 2rem;
+    margin: 4rem 0;
 }
 
 canvas {
@@ -220,7 +221,7 @@ canvas {
 }
 
 main {
-    margin-top: 4rem;
+    margin-top: 8rem;
 
 }
 
