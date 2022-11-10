@@ -21,6 +21,7 @@ body {
 .container {
     max-width: 1050px;
     margin: auto;
+    z-index: 50;
 }
 
 .navbar-mobile {
@@ -177,6 +178,7 @@ body {
 }
 
 .header {
+    position: relative;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -235,6 +237,7 @@ canvas {
 }
 
 main aside {
+    position: relative;
     display: grid;
     grid-template-columns: 1fr;
     margin: 0 auto;
@@ -252,6 +255,16 @@ main h3 {
     font-size: 2rem;
 }
 
+/* 
+- anchor tag so clicking nav links to go to id will not be covered by navbar
+- set the top to the height of the navbar + a little extra
+*/
+.anchor {
+    position: absolute;
+    top: -5rem;
+    left: 0px;
+}
+
 main h4 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
@@ -261,6 +274,10 @@ main h4 {
 .projects-container {
     margin-top: 2rem;
     text-align: center;
+}
+
+.project-tab {
+    position: relative;
 }
 
 #projects {
@@ -331,6 +348,7 @@ article img:hover {
 }
 
 .skills-container {
+    position: relative;
     display: flex;
     flex-direction: column;
     margin-top: 4rem;
@@ -359,6 +377,7 @@ article img:hover {
 }
 
 .contact-container {
+    position: relative;
     padding-bottom: 4rem;
 }
 
