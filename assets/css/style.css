@@ -170,6 +170,8 @@ body {
     padding: 0.5rem;
     text-decoration: none;
     color: white;
+    transition: all 0.15s ease-in-out;
+    border-radius: 5px;
 }
 
 .nav-link:hover {
@@ -335,12 +337,13 @@ main h4 {
 img {
     width: 100%;
     border-radius: 5px;
+    transition: all .3s ease-out;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
 }
 
 article img:hover {
-    transform: scale(.95);
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay: 25ms;
+
+    transform: scale(.97);
 }
 
 #bullbear {
@@ -368,12 +371,13 @@ article img:hover {
     border-radius: 5px;
     text-align: center;
     font-weight: bold;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
 }
 
 .skills-card:hover {
-    transform: scale(.95);
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-delay: 25ms;
+    transform: scale(1.1);
+    box-shadow: 0 25px 50px -12px rgba(0, 187, 255, 0.50);
 }
 
 .contact-container {
@@ -491,6 +495,10 @@ footer h5 {
 @media (min-width: 768px) {
     .header-text {
         width: 75%;
+    }
+
+    .skills-card:hover {
+        transform: scale(1.2);
     }
 }
 
