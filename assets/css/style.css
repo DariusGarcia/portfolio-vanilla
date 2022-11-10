@@ -211,11 +211,11 @@ header .projects-cta {
     background-color: #00bbff;
     color: white;
     text-decoration: none;
+    transition: all 0.2s ease-in-out;
 }
 
 header .projects-cta:hover {
-    scale: 95%;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transform: scale(.97);
     opacity: 75%;
 }
 
