@@ -179,6 +179,10 @@ body {
     border-radius: 5px;
 }
 
+.ul-wrapper {
+    position: relative;
+}
+
 .header {
     position: relative;
     display: flex;
@@ -231,6 +235,10 @@ header .projects-cta:hover {
     margin: 4rem 0;
 }
 
+/* 
+- 3d spline.design animation of avatar
+- linked their lib through the link tag in the header
+ */
 canvas {
     display: block;
     height: 15rem;
@@ -273,6 +281,8 @@ main h4 {
     color: gainsboro;
 }
 
+
+/* ------------------------ projects section ------------------------ */
 .projects-container {
     margin-top: 2rem;
     text-align: center;
@@ -342,7 +352,6 @@ img {
 }
 
 article img:hover {
-
     transform: scale(.97);
 }
 
@@ -350,6 +359,7 @@ article img:hover {
     height: 15rem;
 }
 
+/* ------------------------ skills section ------------------------ */
 .skills-container {
     position: relative;
     display: flex;
@@ -380,9 +390,11 @@ article img:hover {
     box-shadow: 0 25px 50px -12px rgba(0, 187, 255, 0.50);
 }
 
+/* ------------------------ contact section ------------------------ */
 .contact-container {
     position: relative;
-    padding-bottom: 4rem;
+    padding-top: 2rem;
+    text-align: center;
 }
 
 .contact-container h3 {
@@ -393,6 +405,7 @@ article img:hover {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    text-align: center;
 }
 
 .contact-list-wrapper a {
@@ -452,7 +465,6 @@ article img:hover {
     grid-template-columns: 1fr;
     margin: 1rem 0;
     gap: 2rem;
-
 }
 
 footer {
@@ -462,7 +474,6 @@ footer {
     justify-content: space-around;
     border-top: 1px solid grey;
     margin-top: 4rem;
-
     padding: 2rem 0;
     align-items: center;
     padding-bottom: 4rem;
@@ -486,11 +497,11 @@ footer h5 {
     opacity: 75%;
 }
 
-/* -------------------- ----------------------------------------
+/* ------------------------------------------------------------
 
     media queries
 
--------------------- ---------------------------------------- */
+------------------------------------------------------------ */
 
 @media (min-width: 768px) {
     .header-text {
@@ -503,7 +514,6 @@ footer h5 {
 }
 
 @media (min-width: 1177px) {
-
     .navbar-mobile {
         display: none;
     }
@@ -520,7 +530,6 @@ footer h5 {
         padding: 0 2rem;
         border-bottom: 2px solid grey;
         z-index: 5;
-
     }
 
     .nav-links-container {
@@ -590,6 +599,7 @@ footer h5 {
 
     .skills-container {
         text-align: center;
+        margin-top: 8rem;
     }
 
     .skills-card-container {
