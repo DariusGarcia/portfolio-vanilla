@@ -1,6 +1,6 @@
 # Personal Portfolio
 
-[link to deployed app](https://dariusgarcia.github.io/module1-portfolio/)
+[link to deployed app](https://dariusgarcia.github.io/portfolio-vanilla/)
 
 ![screenshot of portfolio](./assets/images/port-screenshot.png)
 
